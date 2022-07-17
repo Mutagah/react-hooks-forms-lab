@@ -11,7 +11,7 @@ function ItemForm({onItemFormSubmit}) {
       name : myNewInputValue,
       category : mySelectedValue,
     }
-    onItemFormSubmit(newItem)g
+    onItemFormSubmit(newItem)
   }
   function handleChange(event){
     setNewInputValue(event.target.value)
