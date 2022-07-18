@@ -2,14 +2,14 @@ import React,{useState} from "react"
 import { v4 as uuid } from "uuid";
 
 function ItemForm({onItemFormSubmit}) {
-  const [myNewInputValue, setNewInputValue] = useState("")
-  const [mySelectedValue, setSelectedValue] = useState("Produce")
+  const [myNewItem, setNewInputValue] = useState("")
+  const [mySelectedCategory, setSelectedValue] = useState("Produce")
   function handleSubmit(event){
     event.preventDefault();
     const newItem = {
       id : uuid(),
-      name : myNewInputValue,
-      category : mySelectedValue,
+      name : myNewItem,
+      category : mySelectedCategory,
     }
     onItemFormSubmit(newItem)
   }
